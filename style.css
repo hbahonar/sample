@@ -12,3 +12,83 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: sample
 Tags: grid-layout, one-column, left-sidebar, right-sidebar, custom-background, custom-logo, custom-menu, featured-images, editor-style, translation-ready, footer-widgets, custom-colors, custom-header, theme-options, threaded-comments, blog, news
 */
+
+body {
+    margin: 0;
+    color: #666666;
+}
+
+* {
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    word-wrap: anywhere;
+    white-space: inherit;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+
+/* skip link */
+
+.skip-link {
+    top: -100%;
+    z-index: 100000;
+}
+
+
+/* back to top button */
+
+.to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    z-index: 2;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+
+
+/* site header */
+
+.site-header {
+    box-shadow: 0 0 7px -2px #333333;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.site-header .logo,
+.site-header .search-box {
+    width: 20%;
+}
+
+.site-header .main-menu {
+    width: 60%;
+}
